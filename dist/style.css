@@ -28,7 +28,7 @@ body {
 }
 
 h2,
-h4 {
+h3 {
   color: hsl(223deg, 47%, 23%);
 }
 
@@ -108,6 +108,7 @@ a {
   text-align: left;
 }
 .subscription .plan-duration {
+  font-size: 1rem;
   font-weight: 900;
 }
 .subscription .plan-price {
