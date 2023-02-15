@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontendmentor.io/solutions/order-summary-component-vnoSFmyFtO](https://www.frontendmentor.io/solutions/order-summary-component-vnoSFmyFtO)
-- Live Site URL: [fem-order-summary-component-9as.pages.dev](fem-order-summary-component-9as.pages.dev)
+- Live Site URL: [fem-order-summary-component-9as.pages.dev](https://fem-order-summary-component-9as.pages.dev)
 
 ## My process
 
