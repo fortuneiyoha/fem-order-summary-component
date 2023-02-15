@@ -48,7 +48,13 @@ a {
 }
 
 .sr-only {
-  display: none;
+  clip-path: rect(0, 0, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
 }
 
 .payment-btn,
