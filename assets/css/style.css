@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/pattern-background-mobile.svg);
+  background-color: var(--clr-neutral-200);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  flex-direction: column;
+  min-height: 100vh;
+}
+@media (min-width: 26em) {
+  body {
+    background: url(../images/pattern-background-desktop.svg);
+    background-color: var(--clr-neutral-200);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+h2,
+h3 {
+  color: var(--clr-neutral-500);
+}
+
+p {
+  color: var(--clr-neutral-400);
+}
+
+.sr-only {
+  -webkit-clip-path: rect(0, 0, 0, 0);
+          clip-path: rect(0, 0, 0, 0);
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  outline: none;
+  text-decoration: none;
+  transition: var(--transition);
+  width: 100%;
+}
+.btn:focus-visible {
+  outline: 2px dotted var(--clr-primary);
+  outline-offset: 5px;
+}
+
+:root {
+  --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-200: hsl(225, 100%, 94%);
+  --clr-neutral-300: hsl(245, 75%, 89%);
+  --clr-neutral-400: hsl(224, 23%, 55%);
+  --clr-neutral-500: hsl(223, 47%, 23%);
+  --clr-neutral-600: hsla(245, 75%, 52%, 0.2);
+  --clr-primary: hsl(245, 75%, 52%);
+  --transition: 0.3s linear;
+  --ff-primary: "Red Hat Display", sans-serif;
+}
+
+.card {
+  background: var(--clr-neutral-100);
+  border-radius: 18px;
+  box-shadow: 0 0 15px var(--clr-neutral-600);
+  margin: 1rem 0;
+  overflow: hidden;
+  text-align: center;
+  width: min(90%, 25rem);
+}
+.card__image {
+  width: 100%;
+}
+.card__body {
+  padding: 1.6rem 1rem;
+}
+@media (min-width: 22.5em) {
+  .card__body {
+    padding: 2rem 2.2rem;
+  }
+}
+.card__heading {
+  font-size: clamp(1.25rem, 1.5rem + 0.6vw, 1.6rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.card__description {
+  font-size: clamp(0.9375rem, 1.215vw + 1rem, 1.03125rem);
+  line-height: 1.6;
+  margin-bottom: 1.5625rem;
+}
+.card__subscription {
+  --clr-neutral-100: hsl(225, 100%, 97%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-neutral-100);
+  border-radius: 10px;
+  margin: 0 auto 1.5rem;
+  padding: 0.625rem 0.7rem;
+}
+@media (min-width: 26em) {
+  .card__subscription {
+    padding: 1rem 1.6rem;
+  }
+}
+.card__subscription-columns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 1.125rem;
+       column-gap: 1.125rem;
+}
+@media (max-width: 22.5em) {
+  .card__subscription-columns .music-icon {
+    width: 2.1875rem;
+  }
+}
+.card__plan {
+  text-align: left;
+}
+.card__plan-duration {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.card__plan-price {
+  font-size: 0.9375rem;
+}
+
+.btn-inline {
+  color: var(--clr-primary);
+  display: inline-block;
+  text-decoration: underline;
+  width: initial;
+}
+.btn-inline:is(:hover, :focus-visible) {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+  box-shadow: 0 5px 10px 5px var(--clr-neutral-300);
+  color: var(--clr-neutral-200);
+  margin-bottom: 1.25rem;
+  padding: 0.95rem;
+}
+.btn-primary:is(:hover, :focus-visible) {
+  opacity: 0.8;
+}
+
+.btn-block {
+  color: var(--clr-neutral-400);
+}
+.btn-block:is(:hover, :focus-visible) {
+  color: var(--clr-neutral-500);
+}
+
+.attribution {
+  font-size: clamp(0.75rem, 0.2vw + 0.875rem, 0.9625rem);
+  margin-bottom: 1.25rem;
+  text-align: center;
+  width: 80%;
+}
+.attribution a {
+  border-radius: 5px;
+  color: var(--clr-primary);
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+.attribution a:focus-visible {
+  outline: 2px solid var(--clr-neutral-500);
+}
+
+@media (max-width: 22.5em) {
+  .btn-primary,
+  .btn-cancel,
+  .card__plan-duration,
+  .card__plan-price {
+    font-size: clamp(0.625rem, 0.8125rem + 0.2vw, 1.03125rem);
+  }
+}/*# sourceMappingURL=style.css.map */
