@@ -71,7 +71,7 @@
   }
 }
 
-.btn-inline {
+.btn--inline {
   color: var(--clr-primary);
   display: inline-block;
   text-decoration: underline;
@@ -82,7 +82,7 @@
   }
 }
 
-.btn-primary {
+.btn--primary {
   background: var(--clr-primary);
   box-shadow: 0 5px 10px 5px var(--clr-neutral-300);
   color: var(--clr-neutral-200);
@@ -94,7 +94,7 @@
   }
 }
 
-.btn-block {
+.btn--block {
   color: var(--clr-neutral-400);
 
   &:is(:hover, :focus-visible) {
