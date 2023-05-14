@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![website preview](screenshots/order-summary-card-desktop.png)
+![website preview](screenshots/order-summary-component-desktop.png)
 
 ### Links
 
