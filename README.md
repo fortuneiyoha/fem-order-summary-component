@@ -69,6 +69,16 @@ If you're new to SASS or need a quick refresher, this guide will walk you throug
 
 Before you start, make sure you have Node.js and NPM installed on your machine. If you don't have them installed, you can download them from [here](https://nodejs.org/en/).
 
+#### Installation
+
+Once you have Node.js and NPM installed, you can install SASS by running the following command in your terminal:
+
+```bash
+npm install -g sass
+```
+
+#### Usage
+
 #### Step 1: Create a SASS file
 
 Create a new SASS file in your project's `assets/scss` directory. You can use `style.scss` as your starting point.
