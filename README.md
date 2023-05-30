@@ -57,8 +57,8 @@ This project was built using the following frontend technologies and methodologi
 │   ├─ util/
 │   └─ style.scss
 ├─ screenshots/
-├─ index.html
-└─ README.md
+├─ README.md
+└─ index.html
 ```
 
 ### Compiling SASS
