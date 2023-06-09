@@ -37,7 +37,7 @@ p {
 }
 
 .sr-only {
-  clip-path: rect(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   left: 0;
   overflow: hidden;

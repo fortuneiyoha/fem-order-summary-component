@@ -53,7 +53,6 @@ This project was built using the following frontend technologies and methodologi
 │ ├─ images/
 │ └─ scss/
 │   ├─ globals/
-│   ├─ layout/
 │   ├─ util/
 │   └─ style.scss
 ├─ screenshots/

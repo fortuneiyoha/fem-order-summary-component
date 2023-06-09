@@ -37,8 +37,7 @@ p {
 }
 
 .sr-only {
-  -webkit-clip-path: rect(0, 0, 0, 0);
-          clip-path: rect(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   left: 0;
   overflow: hidden;
@@ -173,6 +172,14 @@ p {
   color: var(--clr-neutral-500);
 }
 
+@media (max-width: 22.5em) {
+  .btn--primary,
+.btn--cancel,
+.card__plan-duration,
+.card__plan-price {
+    font-size: clamp(0.625rem, 0.8125rem + 0.2vw, 1.03125rem);
+  }
+}
 .attribution {
   font-size: clamp(0.75rem, 0.2vw + 0.875rem, 0.9625rem);
   margin-bottom: 1.25rem;
@@ -191,13 +198,4 @@ p {
 }
 .attribution a:focus-visible {
   outline: 2px solid var(--clr-neutral-500);
-}
-
-@media (max-width: 22.5em) {
-  .btn--primary,
-  .btn--cancel,
-  .card__plan-duration,
-  .card__plan-price {
-    font-size: clamp(0.625rem, 0.8125rem + 0.2vw, 1.03125rem);
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -102,6 +102,16 @@
   }
 }
 
+// Modifies the buttons and flex containers font sizes to fit smaller screens
+@media (max-width: 22.5em) {
+  .btn--primary,
+  .btn--cancel,
+  .card__plan-duration,
+  .card__plan-price {
+    font-size: clamp(0.625rem, calc(0.8125rem + 0.2vw), 1.03125rem);
+  }
+}
+
 .attribution {
   font-size: clamp(0.75rem, calc(0.2vw + 0.875rem), 0.9625rem);
   margin-bottom: 1.25rem;
