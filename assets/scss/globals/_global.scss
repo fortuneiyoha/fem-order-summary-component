@@ -37,12 +37,14 @@ p {
 }
 
 .sr-only {
-  clip: rect(0, 0, 0, 0);
+  border: 0;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
   height: 1px;
-  left: 0;
+  margin: -1px;
   overflow: hidden;
+  padding: 0;
   position: absolute;
-  top: 0;
   width: 1px;
 }
 

@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-200: hsl(225, 100%, 94%);
+  --clr-neutral-300: hsl(245, 75%, 89%);
+  --clr-neutral-400: hsl(224, 23%, 55%);
+  --clr-neutral-500: hsl(223, 47%, 23%);
+  --clr-neutral-600: hsla(245, 75%, 52%, 0.2);
+  --clr-primary: hsl(245, 75%, 52%);
+  --ff-primary: "Red Hat Display", sans-serif;
+  --transition: 0.3s linear;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,12 +49,15 @@ p {
 }
 
 .sr-only {
-  clip: rect(0, 0, 0, 0);
+  border: 0;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  clip: rect(0 0 0 0);
   height: 1px;
-  left: 0;
+  margin: -1px;
   overflow: hidden;
+  padding: 0;
   position: absolute;
-  top: 0;
   width: 1px;
 }
 
@@ -62,18 +77,6 @@ p {
 .btn:focus-visible {
   outline: 2px dotted var(--clr-primary);
   outline-offset: 5px;
-}
-
-:root {
-  --clr-neutral-100: hsl(225, 100%, 98%);
-  --clr-neutral-200: hsl(225, 100%, 94%);
-  --clr-neutral-300: hsl(245, 75%, 89%);
-  --clr-neutral-400: hsl(224, 23%, 55%);
-  --clr-neutral-500: hsl(223, 47%, 23%);
-  --clr-neutral-600: hsla(245, 75%, 52%, 0.2);
-  --clr-primary: hsl(245, 75%, 52%);
-  --transition: 0.3s linear;
-  --ff-primary: "Red Hat Display", sans-serif;
 }
 
 .card {
