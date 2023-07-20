@@ -177,9 +177,9 @@ p {
 
 @media (max-width: 22.5em) {
   .btn--primary,
-.btn--cancel,
-.card__plan-duration,
-.card__plan-price {
+  .btn--cancel,
+  .card__plan-duration,
+  .card__plan-price {
     font-size: clamp(0.625rem, 0.8125rem + 0.2vw, 1.03125rem);
   }
 }
